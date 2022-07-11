@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FROND TABLE</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ewp3gnx.css">
+    <link rel="stylesheet" type="text/css" href="css/multiple.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+    <div class="container">
+    
+      <a onclick="darkMode()" id="dark" title="Dark Mode">Night Mode</a>
+
+      <div class="stickyInfo">
+        <h1 class="title">FROND TABLE (2021)</h1>
+
+        <div class="break"></div>
+          
+        <div id="dim">
+          <p>Dimensions:<br>30" &#x2300;, 15" High</p>
+        </div>
+
+        <div id="mat">
+          <p>Materials:<br>Baltic Birch Plywood, Hard Maple</p>
+        </div>
+
+        <div id="client">
+          <p>Client:<br>Personal</p>
+        </div>
+        
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides1">
+          <div class="numbertext">1 / 2</div>
+          <img src="../images/frond/frond_small.png">
+          <div class="caption"></div>
+        </div>
+
+        <div class="mySlides1">
+            <div class="numbertext">2 / 2</div>
+            <img src="../images/frond/frond_exploded.png">
+            <div class="caption">Exploded View</div>
+          </div>
+
+      <a class="prev" onclick="plusSlides(-1, 0)">&#8226;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#8226;</a>
+      </div>
+
+
+      <p>
+        This piece considers the integration of CNC milling with traditional woodworking and joinery techniques.
+        The table top celebrates the industrial qualities of birch plywood as it gently rests ontop of a half lapped
+        frame made of solid hard maple. The legs of the table are calibrated to match the openings of the table top, establishing
+        a delicate balance between the primary elements.
+      </p>
+      
+      <div class="slideshow-container">
+        <div class="mySlides2">
+          <div class="numbertext">1 / 6</div>
+          <img src="../images/frond/studio.JPG">
+          <div class="caption"></div>
+        </div>
+
+        <div class="mySlides2">
+          <div class="numbertext">2 / 6</div>
+          <img src="../images/frond/cnc_process.JPG">
+          <div class="caption">Preparation for Milling</div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">3 / 6</div>
+          <img src="../images/frond/held.jpg">
+          <div class="caption"></div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">4 / 6</div>
+          <img src="../images/frond/detail1.JPG">
+          <div class="caption">Detail 1</div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">5 / 6</div>
+          <img src="../images/frond/detail2.JPG">
+          <div class="caption">Detail 2</div>
+        </div>
+
+        <div class="mySlides2 fade">
+          <div class="numbertext">6 / 6</div>
+          <img src="../images/frond/insitu.JPG">
+          <div class="caption">In-situ</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1, 1)">&#8226;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#8226;</a>
+      </div>
+
+      <a onclick="topFunction()" id="topBtn" title="Go to top">Top &#8593;</a>
+
+
+      <!-- Navigation -->
+      <div id="navibox-bottom">
+      <a href="emerging_vessels.html">Previous Project</a>
+      <a href="../index.html">Home</a>
+      <a href="cargo_rack.html">Next Project</a>
+      </div>
+    
+      <footer><h6>&#169; Stanley Wong 2022</h6></footer>
+
+    </div>
+
+    <script src="js/multiple.js"></script>
+
+    <script>
+      function darkMode() {
+      var element = document.body;
+      element.classList.toggle("darkMode");
+
+      var x = document.getElementById("dark");
+      if (x.innerHTML === "Dark Mode") {
+          x.innerHTML = "Day Mode";
+      } else {
+          x.innerHTML = "Dark Mode";
+      }
+  }
+  </script>
+
+  </body>
+</html> 
