@@ -1,0 +1,296 @@
+h1{ 
+  font-weight:normal; 
+  font-size: clamp(1.1em, 4vw, 1.75em);
+}
+
+h6{ 
+  font-weight:normal; 
+  font-size: clamp(.5em, 4vw, 1em);
+  margin: 25px 0px;
+}
+
+table{
+  width: 100%
+}
+tr td:nth-child(2) {
+   text-align: left;
+}
+tr td:nth-child(3) {
+   text-align: right;
+}
+
+tr:hover {
+    cursor: pointer;
+  text-decoration: underline
+}
+
+.single{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 100%;
+}
+
+img{
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  width: 80%;
+  object-fit: contain;
+}
+
+p {
+  clear: both;
+}
+
+a {
+text-decoration: none;
+color:#70df12
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #fff
+}
+
+.darkMode a{
+  color: white
+}
+
+#navibox-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: clamp(.25em, 2vw, 1.1em);
+    padding: 20px 0px;
+    border-top: 2px solid #70df12;
+    border-bottom: 2px solid #70df12;
+    margin-bottom: 10px;
+}
+
+.darkMode #navibox-bottom {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.break{
+  flex-basis: 100%;
+  height: 0pt;
+  border-top: 2px solid #70df12;
+}
+
+.darkMode .break{
+  border-top: 2px solid white;
+}
+
+.stickyInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: clamp(.5em, 2vw, 1.25em);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    z-index: 1;
+    background-color: black;
+    border-top: 2px solid #70df12;
+    border-bottom: 2px solid #70df12;
+    margin: 20px 0px;
+}
+
+.darkMode .stickyInfo{
+	background-color: black;
+	color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#dim{
+  text-align: left;
+}
+
+#mat{
+  text-align: center;
+}
+
+#software{
+  text-align: left;
+}
+
+#client{
+  text-align: right;
+}
+
+hr {
+height:2px;
+border-width:0;
+color: #70df12;
+}
+
+.darkMode hr {
+color: white;
+}
+
+.container {
+  margin: auto;
+  width: 66.66%;
+}
+
+footer {
+  float: center;
+  text-align: right;
+}
+
+body{
+  background-color:black;
+  color:#70df12;
+  font-family: neue-haas-grotesk-text, sans-serif;
+  font-weight: 400;font-style: normal;
+  font-size: clamp(.5em, 4vw, 1.25em);
+  margin: 0px;
+}
+
+.darkMode{
+	background-color: black;
+	color: white;
+}
+
+#dark{
+	position: fixed; 
+	top: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: none;
+	color: #70df12;
+	cursor: pointer;
+	font-size: clamp(.25em, 2vw, 1.1em);
+}
+
+.darkMode #dark {
+  color: white;
+}
+
+/* Slideshow Stuff */
+
+.slideshow-container {
+  clear: both;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -22px;
+  color: #70df12;
+  font-weight: bold;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.next:hover {
+  text-decoration: none;
+  -webkit-text-stroke: 2px #70df12;
+  color:black;
+}
+
+.prev:hover {
+  -webkit-text-stroke: 2px #70df12;
+  color:black;
+  text-decoration: none;
+}
+
+.caption {
+  color: fff;
+  font-size: clamp(.5em, 2vw, 1em);
+  padding: 36px 0px 0px 0px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+/*counter */
+.numbertext {
+  color: fff;
+  font-size: clamp(.5em, 2vw, 1em);
+  padding: 36px 0px 0px 0px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+
+#textbox, #navibox-bottom, .next, .prev {
+	font-size: clamp(.25em, 2vw, 1.1em);
+}
+
+.caption, .numbertext{
+  font-size: clamp(.25em, 4vw, 1.25em);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* Back to Top Feature */
+
+#topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 10px;
+  left: 10px; 
+  z-index: 99; 
+  border: none; 
+  outline: none;
+  background-color: none;
+  color: #70df12;
+  cursor: pointer;
+  padding: 15px;
+  font-size: clamp(.25em, 2vw, 1.1em);
+}
+
+#topBtn:hover {
+  background-color: none;
+}
+
+.darkMode #topBtn{
+  color: white;
+}
+
+.description {
+  text-align: right;
+  font-size: clamp(.25em, 2vw, 1.1em);
+}
