@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<!-- 
+___ ____  __   _  _ __   ____ _  _    _    _ _____ _  _ ___ 
+/ __|_  _)/__\ ( \( |  ) ( ___| \/ )  ( \/\/ |  _  | \( ) __)
+\__ \ )( /(__)\ )  ( )(__ )__) \  /    )    ( )(_)( )  ( (_-.
+(___/(__|__)(__|_)\_|____|____)(__)   (__/\__|_____|_)\_)___/
+
+-->
+
+
+<html>
+    <head>
+        <title>Info</title>
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="https://use.typekit.net/ewp3gnx.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+		<script src="js/starfield.js"></script>
+    </head>
+
+    <body>
+        <a onclick="darkMode()" id="dark" title="Dark Mode">Night Mode &#9790;</a>
+
+        <div class="container" >
+
+            <!-- Navigation -->
+            <div id="navibox" >
+                <h1 class="myName"><a href="index_v3.html">Stanley Wong</a></h1>
+                <h1><a href="mailto:user.stanley@gmail.com">Contact</a></h1>
+            </div>
+            
+
+            <p class ="opener">
+                B. 1993 in Vancouver, British Columbia and currently living in Toronto, Ontario since 2011 to study architecture and visual art at the University of Toronto. In 2019, he shifted his focus into studying Industrial Design at OCAD University. <br><br>
+
+                In his free time, he enjoys taking care of his plants, working on bicycles, improving this website and talking to his cat.
+            </p>
+        
+            <button type="button" class="collapsible">Education</button>
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr class="experience">
+                            <td>BDes studying Industrial Design</td>
+                            <td>OCAD University</td>
+                            <td>2019-2022</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>MArch</td>
+                            <td>Carleton University</td>
+                            <td>2017-2019</td>
+                        </tr>
+
+                        
+                        <tr class="experience">
+                            <td>AutoCAD/Revit Fundamentals Diploma</td>
+                            <td>George Brown College</td>
+                            <td>2016</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>HBA studying Architectural Studies with Distinction</td>
+                            <td>Univeristy of Toronto</td>
+                            <td>2020</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <button type="button" class="collapsible">Experience</button>
+            <div class="content">
+                <table>
+                    <tbody>
+                        <tr class="experience">
+                            <td>Junior Designer</td>
+                            <td>Anony</td>
+                            <td>2021</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>Industrial Design Intern</td>
+                            <td>Trans Continental Hardware</td>
+                            <td>2020</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>Rapid Prototyping Technician</td>
+                            <td>Carleton University</td>
+                            <td>2017-2019</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>Teaching Assistant</td>
+                            <td>Carleton University</td>
+                            <td>2017-2019</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>Social Media Intern</td>
+                            <td>C Magazine</td>
+                            <td>2015-2016</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>Installation Assistant</td>
+                            <td>Marcin Kedzior & Christine Kim</td>
+                            <td>2015-2016</td>
+                        </tr>
+
+                        <tr class="experience">
+                            <td>Installation Assistant</td>
+                            <td>Phillip Beesley Architecture Inc.</td>
+                            <td>2011</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+            <button type="button" class="collapsible">Skills</button>
+                <div class="content">
+                    <ul>
+                        <li><u>3-D</u><br> Blender &#8226; Fusion 360 &#8226; Grasshopper &#8226; Keyshot &#8226; Rhinoceros &#8226; Revit &#8226; Solidworks </li>
+                        <li><u>2-D</u><br> AutoCAD &#8226; Illustrator &#8226; Lightroom &#8226; Photoshop &#8226; Premiere </li>
+                        <li><u>Programming/UX</u><br> XD &#8226; Figma &#8226; HTML &#8226; CSS &#8226; JavaScript &#8226; Arduino IDE</li>
+                    </ul>
+                </div>
+            
+                <button type="button" class="collapsible">Exhibited Work</button>
+                <div class="content">
+                    <table>
+                        <tbody>
+                            <tr class="experience">
+                                <td>Micro/Macro</td>
+                                <td>DesignTO</td>
+                                <td>2021</td>
+                            </tr>
+
+                            <tr class="experience">
+                                <td>re:LOCATION</td>
+                                <td>DesignTO</td>
+                                <td>2020</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            
+
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                    content.style.display = "none";
+                    } else {
+                    content.style.display = "block";
+                    }
+                });
+                }
+            </script>
+
+            <script>
+                function darkMode() {
+                var element = document.body;
+                element.classList.toggle("darkMode");
+            }
+            </script>
+
+            <footer><h6>&#169; Stanley Wong 2022</h6></footer>
+        </div>
+        </body>
+    </html>
