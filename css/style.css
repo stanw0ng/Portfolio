@@ -1,0 +1,240 @@
+h1{ 
+	font-weight:normal; 
+	font-size: clamp(1.1em, 4vw, 2em);
+}
+
+h2{ 
+	font-weight:normal; 
+	font-size: clamp(12px, 4vw, 24px);
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+h6{ 
+	font-weight:normal; 
+	font-size: clamp(.25em, 2vw, 1.1em);
+	margin: 25px 0px;
+}
+
+body{
+	background-color:black;
+	color:#70df12;
+	font-family: neue-haas-grotesk-text, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: clamp(.75em, 4vw, 1.25em);
+	margin: 0px;
+}
+
+.darkMode {
+	background-color: black;
+	color: white;
+}
+
+.darkMode .stickyInfo{
+	background-color: black;
+	color: white;
+}
+
+#dark{
+	position: fixed; 
+	top: 20px; 
+	right: 30px;
+	z-index: 99; 
+	border: none;
+	outline: none;
+	background-color: none; 
+	color: #70df12; 
+	cursor: pointer;
+	font-size: clamp(.25em, 2vw, 1.1em);
+}
+
+.darkMode #dark{
+	color: white
+}
+
+table{
+	width: 100%;
+	border-spacing: 0px 10px;
+	padding-bottom: 20px
+	table-layout: auto;
+}
+
+td{
+	font-size: clamp(.25em, 2vw, 1.1em);
+}
+
+li{
+	font-size: clamp(.25em, 2vw, 1.1em);
+}
+
+/* temporary fix to add line to bottom of table */
+hr {
+	height:2px;
+	border-width:0;
+	background-color: #70df12;
+}
+
+.darkMode hr {
+	background-color: white	;
+}
+
+tr td:nth-child(2) {
+   text-align: left;
+}
+
+tr td:nth-child(3) {
+   text-align: right;
+}
+
+tr:hover {
+    cursor: pointer;
+ 	text-decoration: underline;
+}
+
+#bowl:hover {
+    cursor: url("../images/cursors/bowl_thumb.png") 64 64, pointer;
+}
+
+#waiting:hover {
+    cursor: url("../images/cursors/hang_thumb.png") 64 64, pointer;
+}
+
+#dream:hover {
+    cursor: url("../images/cursors/dream_thumb.png") 64 64, pointer;
+}
+
+#common:hover {
+    cursor: url("../images/cursors/common_thumb.png") 64 64, pointer;
+}
+
+#frond:hover {
+    cursor: url("../images/cursors/frond_thumb.png") 64 64, pointer;
+}
+
+#rack:hover {
+    cursor: url("../images/cursors/rack_thumb.png") 64 64, pointer;
+}
+
+.experience:hover{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+	padding: 0px;
+}
+
+li{
+	padding: 5px 0px;
+}
+
+p {	
+	clear: both;
+}
+
+.opener{
+	font-size: clamp(18px, 4vw, 36px);
+	padding-bottom: 36px;
+	border-bottom: 2px solid #70df12;
+}
+
+.darkMode .opener {
+	border-bottom: 2px solid white;
+}
+
+.opener:hover{
+	text-decoration: underline;
+}
+
+a {
+text-decoration: none;
+color:#70df12
+}
+
+.darkMode a{
+color: white;	
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #70df12;
+}
+
+.home{
+	float: left;
+}
+
+.container {
+	margin: auto;
+	width: 66.66%;
+	position:relative; z-index:2;
+}
+
+canvas { position:fixed; top:0; left:0; z-index:1; }
+
+#navibox {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	border-bottom: 2px solid #70df12;
+}
+
+.darkMode #navibox{
+	border-bottom: 2px solid white;
+}
+
+footer {
+	float: center;
+	text-align: right;
+}
+
+
+/* collapse normal */
+.collapsible {
+	background-color: transparent;
+	color: #70df12;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	font-size: clamp(.25em, 4vw, 1.25em);
+	border-bottom: 2px solid #70df12;
+}
+
+.darkMode .collapsible {
+	border-bottom: 2px solid white;
+}
+
+button {
+	padding: 5px 0px;
+}
+  
+  /* collapsible hovering */
+  .active, .collapsible:hover {
+	background-color: transparent;
+  }
+  
+  /* uncollapsed info*/
+  .content {
+	padding: 5px 0px;
+	display: none;
+	overflow: hidden;
+	background-color: transparent;
+	transition: height 2s ease-out 1s;
+  }
+
+  .collapsible:after {
+	content: '\25C2';
+	color: #70df12;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .active:after {
+	content: "\25BE";
+  }
+
+  
