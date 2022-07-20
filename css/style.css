@@ -93,7 +93,7 @@ tr:hover {
  	text-decoration: underline;
 }
 
-#shelf:hover {
+#codex:hover {
     cursor: url("../images/cursors/codex_thumb.png") 64 64, pointer;
 }
 
