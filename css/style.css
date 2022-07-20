@@ -93,6 +93,10 @@ tr:hover {
  	text-decoration: underline;
 }
 
+#shelf:hover {
+    cursor: url("../images/cursors/codex_thumb.png") 64 64, pointer;
+}
+
 #bowl:hover {
     cursor: url("../images/cursors/bowl_thumb.png") 64 64, pointer;
 }
