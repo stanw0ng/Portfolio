@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OXALIS</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ewp3gnx.css">
+    <link rel="stylesheet" type="text/css" href="css/multiple.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+
+    <div class="container">
+    
+      <a onclick="darkMode()" id="dark" title="Dark Mode">Night Mode</a>
+
+      <div class="stickyInfo">
+        <h1 class="title">OXALIS (2022)</h1>
+
+        <div class="break"></div>
+
+        <div id="software">
+          <p>Materials:<br>Baltic Birch, Hard Maple</p>
+        </div>
+
+        <div id="client">
+          <p>Client:<br>Commission</p>
+        </div>
+        
+      </div>
+
+      
+      <img class="single" src="../images/clover/clover.png" alt = "">
+      
+      <div class="slideshow-container">
+        <div class="mySlides1">
+          <div class="numbertext">1 / 4</div>
+          <img src="../images/codex/planks.JPG">
+          <div class="caption">Planks After Milling</div>
+        </div>
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="../images/codex/endgrain.JPG">
+            <div class="caption">End Grains</div>
+        </div>
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../images/codex/installation.JPG">
+          <div class="caption">Installation</div>
+        </div>
+
+        <div class="mySlides1 fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="../images/codex/detail.JPG">
+          <div class="caption">Ash Inlay Detail</div>
+        </div>
+
+      <a class="prev" onclick="plusSlides(-1, 0)">&#8226;</a>
+      <a class="next" onclick="plusSlides(1, 0)">&#8226;</a>
+      </div>
+
+      <img class="single" src="../images/codex/horizontal.jpg" alt = "fob">
+    
+
+
+      <!-- Navigation -->
+      <div id="navibox-bottom">
+      <a href="cargo_rack.html">Previous Project</a>
+      <a href="../index.html">Home</a>
+      <a href="dream.html">Next Project</a>
+      </div>
+    
+      <footer><h6>&#169; Stanley Wong 2022</h6></footer>
+
+    </div>
+
+    <script src="js/multiple.js"></script>
+
+    <script>
+      function darkMode() {
+      var element = document.body;
+      element.classList.toggle("darkMode");
+
+      var x = document.getElementById("dark");
+      if (x.innerHTML === "Dark Mode") {
+          x.innerHTML = "Day Mode";
+      } else {
+          x.innerHTML = "Dark Mode";
+      }
+  }
+  </script>
+
+  </body>
+</html> 
