@@ -93,8 +93,12 @@ tr:hover {
  	text-decoration: underline;
 }
 
-#codex:hover {
+#oxalis:hover {
     cursor: url("../images/cursors/oxalis_thumb.png") 64 64, pointer;
+}
+
+#codex:hover {
+    cursor: url("../images/cursors/codex_thumb.png") 64 64, pointer;
 }
 
 #bowl:hover {
