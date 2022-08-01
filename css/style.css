@@ -93,6 +93,10 @@ tr:hover {
  	text-decoration: underline;
 }
 
+#stack:hover {
+    cursor: url("../images/cursors/stack_thumb.png") 64 64, pointer;
+}
+
 #splash:hover {
     cursor: url("../images/cursors/splash_thumb.png") 64 64, pointer;
 }
