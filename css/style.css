@@ -93,8 +93,8 @@ tr:hover {
  	text-decoration: underline;
 }
 
-#stack:hover {
-    cursor: url("../images/cursors/roussanne_thumb.png") 64 64, pointer;
+#roussanne:hover {
+    cursor: url("../images/cursors/stack_thumb.png") 64 64, pointer;
 }
 
 #stack:hover {
