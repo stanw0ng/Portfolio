@@ -31,6 +31,13 @@
         
       </div>
 
+      <div class="stickyInfo">
+        <button type="button" class="collapsible">Description</button>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis delectus, non placeat magni dolorem omnis eligendi provident commodi laudantium nostrum, doloribus aperiam nemo! Perferendis adipisci eius possimus, dolores ab enim!</p>
+        </div>
+      </div>
+
       <div class="slideshow-container">
         <div class="mySlides1">
           <div class="numbertext">1 / 3</div>
@@ -127,6 +134,23 @@
     </div>
 
     <script src="js/multiple.js"></script>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+          content.style.display = "none";
+          } else {
+          content.style.display = "block";
+          }
+      });
+      }
+  </script>
 
     <script>
       function darkMode() {
