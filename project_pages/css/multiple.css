@@ -309,6 +309,7 @@ body{
 
 .darkMode .collapsible {
 	border-bottom: 2px solid white;
+  color: white;
 }
 
 button {
@@ -331,7 +332,6 @@ button {
 
   .collapsible:after {
 	content: '\25C2';
-	color: #70df12;
 	font-weight: bold;
 	float: right;
 	margin-left: 5px;
