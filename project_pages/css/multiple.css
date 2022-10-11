@@ -1,12 +1,14 @@
 h1{ 
   font-weight:normal; 
   font-size: clamp(1.1em, 4vw, 1.75em);
+  padding: .5em .5em;
 }
 
 h6{ 
   font-weight:normal; 
   font-size: clamp(.5em, 4vw, 1em);
   margin: 25px 0px;
+  text-align: right;
 }
 
 table{
@@ -24,32 +26,40 @@ tr:hover {
   text-decoration: underline
 }
 
+.picture{
+  display: flex;
+  flex-direction: column;
+}
+
 .single{
-  clear: both;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 600px;
+  display: flex;
+  height: 100%;
   width: 100%;
 }
 
 img{
-  clear: both;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 600px;
-  width: 80%;
+  height: 100%;
+  width: 100%;
   object-fit: contain;
 }
 
 p {
   clear: both;
+  margin: .5em;
 }
 
 a {
 text-decoration: none;
 color:#70df12
+}
+
+.gallery{
+  display: flex;
+  flex-direction: column;
+	margin: 5em;
+  min-height: 100vh;
+  height: -webkit-fill-available;
 }
 
 a:hover {
@@ -66,10 +76,11 @@ a:hover {
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: clamp(.25em, 2vw, 1.1em);
-    padding: 20px 0px;
+    padding: 1em;
     border-top: 2px solid #70df12;
     border-bottom: 2px solid #70df12;
     margin-bottom: 10px;
+    margin-top: auto;
 }
 
 .darkMode #navibox-bottom {
@@ -137,14 +148,79 @@ color: white;
 }
 
 .container {
-  margin: auto;
-  width: 66.66%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-footer {
-  float: center;
+.split {
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+.left {
+  left: 0;
+  min-height: 100vh;
+}
+
+.right {
+  right: 0;
+}
+
+.project{
+  display: flex;
+  flex-direction: column;
+  height: height: -webkit-fill-available;
+  height: 100vh;
+}
+
+.info{
+  margin: .75fem;
+  border-bottom: 2px solid;
+}
+
+
+.ptitle{
+  border-top: 2px solid ;
+  border-bottom: 2px solid;
+}
+
+.materials{
+  margin: 1em;
+}
+
+.ptype{
+  margin: 1em;
+}
+
+.des{
+  display: block;
+  width: 100%;
+  margin: .5em 0;
   text-align: right;
 }
+
+.writing{
+  margin: 1em;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: clamp(.25em, 2vw, 1.1em);
+  margin-bottom: 10px;
+  margin-top: auto;
+}
+
 
 body{
   background-color:black;
@@ -153,6 +229,9 @@ body{
   font-weight: 400;font-style: normal;
   font-size: clamp(.5em, 4vw, 1.25em);
   margin: 0px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .darkMode{
@@ -177,116 +256,7 @@ body{
   color: white;
 }
 
-/* Slideshow Stuff */
-
-.slideshow-container {
-  clear: both;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  margin: auto;
-}
-
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 12px;
-  margin-top: -22px;
-  color: #70df12;
-  font-weight: bold;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0px 0px 3px;
-}
-
-.next:hover {
-  text-decoration: none;
-  -webkit-text-stroke: 2px #70df12;
-  color:black;
-}
-
-.prev:hover {
-  -webkit-text-stroke: 2px #70df12;
-  color:black;
-  text-decoration: none;
-}
-
-.caption {
-  color: fff;
-  font-size: clamp(.5em, 2vw, 1em);
-  padding: 36px 0px 0px 0px;
-  position: relative;
-  bottom: 8px;
-  width: 100%;
-  text-align: left;
-}
-
-/*counter */
-.numbertext {
-  color: fff;
-  font-size: clamp(.5em, 2vw, 1em);
-  padding: 36px 0px 0px 0px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: right;
-}
-
-#textbox, #navibox-bottom, .next, .prev {
-	font-size: clamp(.25em, 2vw, 1.1em);
-}
-
-.caption, .numbertext{
-  font-size: clamp(.25em, 4vw, 1.25em);
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* Back to Top Feature */
-
-#topBtn {
-  display: none; 
-  position: fixed; 
-  bottom: 10px;
-  left: 10px; 
-  z-index: 99; 
-  border: none; 
-  outline: none;
-  background-color: none;
-  color: #70df12;
-  cursor: pointer;
-  padding: 15px;
-  font-size: clamp(.25em, 2vw, 1.1em);
-}
-
-#topBtn:hover {
-  background-color: none;
-}
-
-.darkMode #topBtn{
+.darkMode ptitle {
   color: white;
 }
 
@@ -340,5 +310,3 @@ button {
   .active:after {
 	content: "\25BE";
   }
-
-  
