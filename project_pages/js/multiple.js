@@ -42,3 +42,35 @@ function darkMode() {
   var element = document.body;
   element.classList.toggle("darkMode");
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+	body{
+		  font-size: clamp(.25em, 3vw, 1.1em);
+	}
+
+	.project{
+		height: unset;
+		position: relative
+	}
+
+	.left{
+		min-height: unset;
+	}
+
+	.split {
+  height: unset;
+  width: 100%;
+  position: relative;
+}
+	.gallery{
+		margin: 1em;
+	}
+
+	.ptitle{
+		text-align: center;
+	}
+}
