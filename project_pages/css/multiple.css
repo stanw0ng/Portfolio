@@ -341,5 +341,37 @@ button {
     .ptitle{
       text-align: center;
     }
-    
+
+    @media only screen 
+    and (device-width: 375px) 
+    and (device-height: 812px) 
+    and (-webkit-device-pixel-ratio: 3) { 
+
+      body{
+        font-size: clamp(.25em, 3vw, 1.1em);
+      }
+
+      .project{
+        height: unset;
+        position: relative
+      }
+
+      .left{
+        min-height: unset;
+      }
+
+      .split {
+      height: unset;
+      width: 100%;
+      position: relative;
+    }
+      .gallery{
+        margin: 1em;
+      }
+
+      .ptitle{
+        text-align: center;
+      }
+
+    }
 }
