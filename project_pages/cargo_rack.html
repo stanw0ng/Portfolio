@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CARGO RACK</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ewp3gnx.css">
+    <link rel="stylesheet" type="text/css" href="css/multiple.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    
+    <a onclick="darkMode()" id="dark" title="Dark Mode">Night Mode</a>
+
+    <div class="container">
+
+        <div class="split left">
+
+            <div class="project">
+
+                <div class="info">
+                        <h1 class="ptitle">CARGO RACK (2020)</h1>
+                        <p class="materials">Materials: <br>Cold Rolled Steel</p>
+                        <p class="ptype">Client:<br>Compelling Experience Design</p>
+                </div>
+    
+                <p class="writing">
+                    A steel cargo rack formed by a series of bends on a Hossfeld Bender and TIG-welded together. The metal is left to rust for a month and then sealed  with a clear finish that captures the patina. 
+                </p>
+
+                <div id="navibox-bottom">
+                    <a href="frond.html">Previous Project</a>
+                    <a href="../index.html">Home</a>
+                    <a href="emerging_vessels.html">Next Project</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="split right">
+
+            <div class ="gallery">
+
+                <div class = picture>
+                    <img src="../images/cargo/cargo.png" alt="line drawing of cargo rack">
+                    <p class="des"></p>
+                </div>
+
+                <div class = picture>
+                    <img src="../images/cargo/rack.jpg" alt="cargo rack on bike">
+                    <p class="des"></p>
+                </div>
+
+                <div class = picture>
+                    <img src="../images/cargo/raw.png" alt= "first prototype">
+                    <p class="des"></p>
+                </div>
+
+                <div class = picture>
+                    <img src="../images/cargo/detail1.png" alt="detail of cargo rack arms">
+                    <p class="des"></p>
+                </div>
+
+                <div class = picture>
+                    <img src="../images/cargo/detail2.png" alt="detail of cargo rack motif">
+                    <p class="des"></p>
+                </div>
+
+                <div class = picture>
+                    <img src="../images/cargo/detail3.png" alt="detail of cargo rack bracket">
+                    <p class="des"></p>
+                </div>
+
+                <footer><h6>&#169; Design and Code by Stanley Wong 2022</h6></footer>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="js/multiple.js"></script>
+
+    <script>
+      function darkMode() {
+      var element = document.body;
+      element.classList.toggle("darkMode");
+
+      var x = document.getElementById("dark");
+      if (x.innerHTML === "Dark Mode") {
+          x.innerHTML = "Day Mode";
+      } else {
+          x.innerHTML = "Dark Mode";
+      }
+  }
+  </script>
+
+  </body>
+</html> 
