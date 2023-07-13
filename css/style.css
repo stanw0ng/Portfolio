@@ -257,4 +257,8 @@ button {
 	content: "\25BE";
   }
 
+  ::-webkit-scrollbar {
+    display: none;
+}
+
   
